@@ -1,0 +1,8 @@
+.snakemake/
+.pki/
+results/
+logs/
+.cache/
+*.log
+screenlog.*
+.DS_Store
