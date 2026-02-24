@@ -7,7 +7,7 @@ rule qc_nanoplot:
         outdir=lambda wc: f"{OUTDIR}/{wc.sample}/qc/nanoplot"
     threads: 1
     container:
-        "docker://quay.io/biocontainers/nanoplot:1.43.0--pyhdfd78af_0"
+        config["containers"]["nanoplot"]
     shell:
         r"""
         mkdir -p {params.outdir}

@@ -6,7 +6,7 @@ rule polishing:
         fasta = f"{OUTDIR}/{{sample}}/polishing/medaka/consensus.fasta"
     threads: 16
     container:
-        "docker://staphb/medaka:2.2.0"
+        config["containers"]["medaka"]
     params:
         outdir = f"{OUTDIR}/{{sample}}/polishing/medaka",
         model = "r1041_e82_400bps_sup_v5.2.0"

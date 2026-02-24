@@ -5,7 +5,7 @@ rule assembly:
         f"{OUTDIR}/{{sample}}/assembly/consensus_assembly.fasta"
     threads: 16
     container:
-        "docker://varunshamanna/autocycler:v0.5.2"
+        config["containers"]["autocycler"]
     shell:
         r"""
         set -euo pipefail

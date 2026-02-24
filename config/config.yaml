@@ -1,0 +1,5 @@
+containers:
+  autocycler: "/shared/singularity_images/varunshamanna_autocycler_v0.5.2.sif"
+  medaka: "/shared/singularity_images/staphb_medaka_2.2.0.sif"
+  nanoplot: "/shared/singularity_images/quay.io_biocontainers_nanoplot_1.43.0--pyhdfd78af_0.sif"
+  nanofilt: "/shared/singularity_images/onebiome_nanofilt_2.5.0.sif"

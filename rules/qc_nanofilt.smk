@@ -8,7 +8,7 @@ rule nanofilt:
         f"{OUTDIR}/{{sample}}/filtered/{{sample}}.filtered.fastq.gz"
     threads: 1
     container:
-        "docker://onebiome/nanofilt:latest"
+        config["containers"]["nanofilt"]
 
     shell:
         r"""
